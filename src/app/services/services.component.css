@@ -1,0 +1,44 @@
+mat-slider {
+  width: 100%;
+}
+
+
+
+
+.card {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.card-price-text {
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+}
+
+/* Custom tick mark styles */
+.mat-slider-ticks-container {
+  position: relative;
+  height: 10px;
+}
+
+.float-start {
+  color: green;
+  padding-right: 10px;
+}

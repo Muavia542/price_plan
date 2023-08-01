@@ -1,0 +1,58 @@
+
+
+  <!-- Slider -->
+  <div class="slider-container">
+    <mat-slider min="0" max="100" step="1"  discrete [displayWith]="formatLabel"  >
+      <input matSliderThumb>
+    </mat-slider>
+  </div>
+ 
+  
+  
+  <!-- Cards -->
+  <div class="card-container">
+    <mat-card class="custom-card">
+      <mat-card-content>
+        <h5 class="card-title">Neat</h5>
+        <p class="card-text">All of the essential features you need to manage bookings.</p>
+        <p class="card-price">{{calculatePrice}} <br>Per Month</p>
+        <button mat-raised-button color="primary" class="w-100 mb-1">Try for 30 days free</button>
+        <ul class="list-group">
+          <li class="list-group-item">Appointments<span class="float-start">&#10003;</span></li>
+          <li class="list-group-item">Online booking<span class="float-start">&#10003;</span></li>
+          <li class="list-group-item">Point of sale<span class="float-start">&#10003;</span></li>
+          <li class="list-group-item">Reminders<span class="float-start">&#10003;</span></li>
+          <li class="list-group-item">Waitlist<span class="float-start">&#10003;</span></li>
+          <li class="list-group-item">Customer reviews<span class="float-start">&#10003;</span></li>
+          <li class="list-group-item">Integrations<span class="float-start">&#10003;</span></li>
+        </ul>
+        <button mat-raised-button color="secondary" class="w-100 mt-3">See all Features</button>
+        <p class="mt-3">First employee is US$25</p>
+        <p>Each additional employee is US$7</p>           
+      </mat-card-content>
+    </mat-card>
+  
+    <mat-card class="custom-card">
+      <mat-card-content>
+        <h5 class="card-title">Loaded</h5>
+        <p class="card-text">A plan jam-packed with every feature Ovatu has to offer.</p>
+        <p class="card-price">$65<br>Per Month</p>
+        <button mat-raised-button color="primary" class="w-100 mb-1">Try for 30 days free</button>
+        <ul class="list-group">
+          <li class="list-group-item">Appointments<span class="float-start">&#10003;</span></li>
+          <li class="list-group-item">Online booking<span class="float-start">&#10003;</span></li>
+          <li class="list-group-item">Point of sale<span class="float-start">&#10003;</span></li>
+          <li class="list-group-item">Reminders<span class="float-start">&#10003;</span></li>
+          <li class="list-group-item">Waitlist<span class="float-start">&#10003;</span></li>
+          <li class="list-group-item">Customer reviews<span class="float-start">&#10003;</span></li>
+          <li class="list-group-item">Integrations<span class="float-start">&#10003;</span></li>
+        </ul>
+        <button mat-raised-button color="secondary" class="w-100 mt-3">See all Features</button>
+        <p class="mt-3">First employee is US$38</p>
+        <p>Each additional employee is US$10</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
+
+  
