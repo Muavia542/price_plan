@@ -1,15 +1,20 @@
 mat-slider {
   width: 100%;
+
 }
 
 
 
 
+
+/* Updated background styles for cards */
 .card {
-  height: 100%;
-  width: 500px;
-  display: flex;
-  justify-content: center;
+  background-color: #f8f9fa;
+  border: none;
+}
+
+.card-body {
+  padding: 1.5rem;
 }
 
 .card-title {
@@ -17,28 +22,67 @@ mat-slider {
   font-weight: bold;
 }
 
-.card-price {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.card-price-text {
-  font-size: 0.9rem;
-  margin-top: 0;
-}
-
 .card-text {
   margin-bottom: 1rem;
+  font-family: Inter;
 }
 
-/* Custom tick mark styles */
-.mat-slider-ticks-container {
+.card-price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "DM Serif Display";
+}
+.card-price-text{
+  margin-left: .75rem;
+  font-family: Inter;
+  padding-left: 6px;
+}
+.btn-full-width {
+  width: 100%;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
   position: relative;
-  height: 10px;
+  padding-left: 30px;
 }
 
-.float-start {
+.tick-mark {
   color: green;
-  padding-right: 10px;
+  position: absolute;
+  left: 0;
+}
+
+.employee-text {
+  margin: 1rem 0;
+}
+
+.employee-price {
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  color: rgb(2, 2, 80);
+}
+.btn {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(119, 164, 74);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  /* color: rgb(119, 164, 74); */
+}
+.see_all{
+  background-color: #77A44A33;
 }

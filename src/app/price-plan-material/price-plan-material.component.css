@@ -1,55 +1,95 @@
-.example-spacer {
-    flex: 1 1 auto;
-  }
-  
-  .slider-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  mat-slider{
-    width: 600px;
-  }
-  
-  /* cards */
-  .card-container {
-    display: flex;
-    justify-content: center; /* Center the cards horizontally */
-  }
-  .card-price{
-    font-size: large;
-  }
-  
-  .custom-card {
-    background-color: #f8f9fa;
-    border: none;
-    margin: 16px; /* Add margin around the cards */
-    width: 400px; /* Set a fixed width for the cards */
-  }
-  
-  .custom-card .mat-card-content {
-    padding: 16px;
-  }
-  
-  .custom-card .list-group {
-    background-color: #f8f9fa;
-    border: none;
-    padding: 8px; /* Add padding to the list */
-  }
-  
-  .custom-card .list-group-item {
-    border: none;
-    padding: 8px 0; /* Add padding to the list items */
-  }
-  
-  /* Add styles to make the tick mark visible */
-  .custom-card .mat-slide-toggle-thumb {
-    background-color: green;
-  }
-  
-  .custom-card .mat-slide-toggle-bar {
-    background-color: green;
-  }
-  
+mat-slider {
+  width: 100%;
+}
+
+.slider-custom {
+  padding: 10px 0;
+}
+
+.card {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-price-extra-large {
+  font-size: 2rem;
+  color: blue;
+}
+
+.card-price-text {
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.tick-mark {
+  color: green;
+}
+
+.list-text {
+  padding-left: 10px;
+}
+
+.green-button {
+  background-color: green;
+}
+
+
+
+/* mat-slider {
+  width: 100%;
+}
+
+.card {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.card-price-text {
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.float-end {
+  color: green;
+} */

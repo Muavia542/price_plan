@@ -1,38 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-price-plan-material',
   templateUrl: './price-plan-material.component.html',
   styleUrls: ['./price-plan-material.component.css']
 })
-export class PricePlanMaterialComponent {
-sliderValue: number = 1;
-servicePrice: number = 65; // Initial price
+export class PricePlanMaterialComponent implements OnInit {
+  form!: FormGroup;
+  servicePriceNeat: number = 65; // Initial price for Neat plan
+  servicePriceLoaded: number = 85; // Initial price for Loaded plan
 
-constructor() { }
-ngOnInit(): void {
-}
+  constructor(private formBuilder: FormBuilder) {}
 
-formatLabel(value: number): string {
-  this.sliderValue = value;
-  console.log(this.sliderValue);
-  return `${value}`;
-}
+  ngOnInit(): void {
+    this.form = this.formBuilder.group({
+      quantity: [0] // Initial value for the slider
+    });
+  }
 
-// calculatePrice() {
-//   this.servicePrice = this.servicePrice + this.sliderValue * 25; 
-//   return this.servicePrice;
-//   console.log(this.calculatePrice);
-  
-// }
-onSliderChange(value: number) {
-  this.sliderValue = value;
-  this.calculatePrice();
-}
+  formatLabel(value: number): string {
+    return `${value}`;
+  }
 
-calculatePrice() {
-  this.servicePrice = 65 + this.sliderValue * 25;
-}
+  calculatePriceNeat(): number {
+    const sliderValue = this.form.get('quantity')!.value;
+    return this.servicePriceNeat + sliderValue * 35; // Each additional employee is US $35
+  }
 
-
+  calculatePriceLoaded(): number {
+    const sliderValue = this.form.get('quantity')!.value;
+    return this.servicePriceLoaded + sliderValue * 49; // Each additional employee is US $49
+  }
 }

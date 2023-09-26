@@ -17,10 +17,16 @@ export class ServicesComponent implements OnInit  {
 
   form: FormGroup;
 
+
   formatLabel(value: number): string {
     this.sliderValue = value;
-    console.log(this.sliderValue);
-    return `${value}Dentist`;
+  
+    if (this.sliderValue === 0) {
+      return 'Just Me';
+    } else {
+      console.log(this.sliderValue);
+      return `${value}` + ` Dentist`;
+    }
   }
   
   
